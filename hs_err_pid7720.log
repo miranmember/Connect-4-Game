@@ -1,0 +1,59 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007fb4b72f2f0a, pid=7720, tid=7789
+#
+# JRE version: OpenJDK Runtime Environment (11.0.17+8) (build 11.0.17+8-post-Ubuntu-1ubuntu222.04)
+# Java VM: OpenJDK 64-Bit Server VM (11.0.17+8-post-Ubuntu-1ubuntu222.04, mixed mode, sharing, tiered, compressed oops, g1 gc, linux-amd64)
+# Problematic frame:
+# C  [libnvwgf2umx.so+0x286bf0a]
+#
+# No core dump will be written. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# If you would like to submit a bug report, please visit:
+#   https://bugs.launchpad.net/ubuntu/+source/openjdk-lts
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Dclassworlds.conf=/usr/share/maven/bin/m2.conf -Dmaven.home=/usr/share/maven -Dlibrary.jansi.path=/usr/share/maven/lib/jansi-native -Dmaven.multiModuleProjectDirectory=/mnt/c/Users/Miran Member/Desktop/CS TEMP/Projects/Project2Connect4/sp2021Project2_connect4 org.codehaus.plexus.classworlds.launcher.Launcher exec:java
+
+Host: AMD Ryzen 5 5600 6-Core Processor, 12 cores, 11G, Ubuntu 22.04.1 LTS
+Time: Sun Dec 18 19:48:00 2022 CST elapsed time: 121.270038 seconds (0d 0h 2m 1s)
+
+---------------  T H R E A D  ---------------
+
+Current thread is native thread
+
+Stack: [0x00007fb4d044a000,0x00007fb4d0c49000],  sp=0x00007fb4d0c47d90,  free space=8183k
+Native frames: (J=compiled Java code, A=aot compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [libnvwgf2umx.so+0x286bf0a]
+
+[error occurred during error reporting (printing native stack), id 0xb, SIGSEGV (0xb) at pc=0x00007fb55d829a17]
+
+
+siginfo: si_signo: 11 (SIGSEGV), si_code: 1 (SEGV_MAPERR), si_addr: 0x00007fb4d0c49000
+
+Register to memory mapping:
+
+RAX=
+[error occurred during error reporting (printing register info), id 0xb, SIGSEGV (0xb) at pc=0x00007fb55da834fc]
+
+Registers:
+RAX=0x0000000000000016, RBX=0x0000000000000000, RCX=0x00007fb4d0c47d98, RDX=0x0000000000000000
+RSP=0x00007fb4d0c47d90, RBP=0x0000000000000000, RSI=0x00007fb4ec418570, RDI=0x00007fb4ec1e6e00
+R8 =0x00007fb4b0000b70, R9 =0x00007ffd881a8080, R10=0x000000000003a1e8, R11=0x17265366d5ee91ed
+R12=0x00007fb4ec418501, R13=0x00007fb4d0c49000, R14=0x00007fb4ec1e6f08, R15=0x00007fb4d0c47e06
+RIP=0x00007fb4b72f2f0a, EFLAGS=0x0000000000010246, CSGSFS=0x002b000000000033, ERR=0x0000000000000004
+  TRAPNO=0x000000000000000e
+
+Top of Stack: (sp=0x00007fb4d0c47d90)
+0x00007fb4d0c47d90:   00000000639fc2d0 0000000000043a5b
+0x00007fb4d0c47da0:   00007fb4ec1e6e00 00007fb4ec1e6f08
+0x00007fb4d0c47db0:   00007fb4ec418570 00007fb4d0c47d98
+0x00007fb4d0c47dc0:   00007fb4d0c47e07 00007fb4ec1e6e00 
+
+Instructions: (pc=0x00007fb4b72f2f0a)
+0x00007fb4b72f2e0a:   60 48 83 ec 08 4c 8d 64 24 10 4c 89 e7 4c 89 fe
+0x00007fb4b72f2e1a:   48 89 da 48 8b 4c 24 28 44 8b 44 24 20 44 8b 4c
+0x00007fb4b72f2e2a:   24 24 41 55 41 56 50 e8 ba fa ff ff
