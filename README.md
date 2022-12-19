@@ -20,3 +20,11 @@ The game includes a menu bar with the following options:
 + Theme: allows the user to change the theme of the game by selecting one of the following options:
   + Light: changes the background color to white and the disc colors to red and yellow.
   + Dark: changes the background color to black and the disc colors to red and green.
+
+## Customization
+The game includes several customization options, including the ability to change the colors of the discs and the background, as well as the text displayed at the beginning and end of the game. These options can be modified in the start method of the **JavaFXTemplate class**.
+
+## Additional Features
+The game includes the following additional features:
++ A pop-up message is displayed at the beginning of each turn, indicating which player's turn it is.
++ The game includes a stack that stores the locations of each disc placed on the board, allowing users to undo their last move by clicking the Reverse Move button found on the menu.
